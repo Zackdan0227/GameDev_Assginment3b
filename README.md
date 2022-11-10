@@ -1,2 +1,3 @@
 # GameDev_Assginment3b
- Cardgame
+# Credits
+[poker cards sprites](https://opengameart.org/content/2d-poker-pack)
