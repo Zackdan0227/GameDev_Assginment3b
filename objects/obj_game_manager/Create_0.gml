@@ -1,16 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomize()
+deal_cards = true
+player_hit = false
+player_stand = false
 play = false
 deal = false
-ai1_x = 200
+ai1_x = 275
 ai1_y = 150
 dealcards = ds_list_create()
-p1_x = 200
+p1_x = 275
 p1_y = 580
 wait_for_player = false
 faceup_cards = ds_list_create()
-num_cards = 24
+num_cards = 52
 ai_hand = 0;
 p_hand = 0;
 ai_cards = ds_list_create()
@@ -28,8 +31,10 @@ cards = ds_list_create()
 card_y = 300
 dep = 0
 burn_cards = ds_list_create()
+player_points =0;
+ai_points = 0;
 for(i=0; i< num_cards; i++){
-n = i%3;
+n = i%14;
 
 ds_list_add(dealcards, n)
 }
@@ -39,12 +44,12 @@ card_inst = instance_create_layer( 80 , card_y, "Instances", obj_card)
 card_inst.card_type = dealcards[|i];
 
 ds_list_add(cards, card_inst)
-card_y +=5
+card_y +=2
 }
 
 burncard_y = 440
 //AI
-	
+	card_value = 0;
 	deal = true
 	curCards = cards[|0]
 	ds_list_add(ai_cards, curCards)
@@ -55,10 +60,11 @@ burncard_y = 440
 		target_y = other.ai1_y
 		owner = 0;
 	}
-	ai1_x += 100
+	ai1_x += 50
 	ai_hand ++
 	
-	alarm[0] = room_speed *0.25	
+	
+	alarm[1] = room_speed *0.25	
 	
 //player
 

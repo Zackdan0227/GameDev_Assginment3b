@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 facedown = true
-
+value = 0
 target_x = 0
 target_y = 0
 owner = -1;
