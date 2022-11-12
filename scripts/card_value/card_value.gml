@@ -3,7 +3,7 @@
 function card_value(card){
 if(card !=noone){
 	switch(sprite_get_name(card.sprite_index)){
-		c
+		
 	}
 }
 }

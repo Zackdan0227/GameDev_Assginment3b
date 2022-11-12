@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomize()
+ai_deal_cards = true
+player_hand_value = 0
+ai_hand_value = 0
 deal_cards = true
 player_hit = false
 player_stand = false
@@ -18,21 +21,18 @@ ai_hand = 0;
 p_hand = 0;
 ai_cards = ds_list_create()
 player_cards = ds_list_create()
-battle_cards = ds_list_create()
-ai_decision = -1
+
+
 ai_play = true
 ai_chose_x = 300
 ai_chose_y = 300;
-p_chose_x = 300
-p_chose_y = 450
-ai_chose_card = -1
-p_chose_card = -1
+
+
 cards = ds_list_create()
 card_y = 300
 dep = 0
 burn_cards = ds_list_create()
-player_points =0;
-ai_points = 0;
+
 for(i=0; i< num_cards; i++){
 n = i%14;
 
