@@ -20,6 +20,7 @@ curCards = cards[|0]
 	alarm [0] = room_speed*0.25}
 	
 	
+	
 }
 
 if(ai_hand ==2 and p_hand ==2){
@@ -42,6 +43,8 @@ alarm [4] = room_speed*0.5
 	play = false
 	wait_for_player =false
 alarm [4] = room_speed*0.5	
+}else{
+	wait_for_player = true	
 }
 
 

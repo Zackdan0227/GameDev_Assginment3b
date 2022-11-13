@@ -9,6 +9,7 @@ card_shuff.target_x = 80
 card_shuff.target_y = card_y
 card_shuff.facedown = true
 card_shuff.card_type = dealcards[|restart_i]
+cardtype(dealcards[|restart_i], card_shuff)
 ds_list_add(cards, card_shuff)
 
 card_y-=5
@@ -27,6 +28,7 @@ card_shuff.target_x = 80
 card_shuff.target_y = card_y
 card_shuff.facedown = true
 card_shuff.card_type = dealcards[|restart_i]
+cardtype(dealcards[|restart_i], card_shuff)
 ds_list_add(cards, card_shuff)
 
 card_y-=5

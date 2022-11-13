@@ -16,6 +16,7 @@ for(i = 0; i<ds_list_size(cards);i++){
 totalCards = p_hand + ai_hand +ds_list_size(cards)
 ds_list_shuffle(dealcards)
 card_y = 420
+
 ds_list_clear(cards)
 ds_list_clear(player_cards)
 ds_list_clear(ai_cards)

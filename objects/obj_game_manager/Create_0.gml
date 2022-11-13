@@ -9,10 +9,10 @@ player_hit = false
 player_stand = false
 play = false
 deal = false
-ai1_x = 275
+ai1_x = 235
 ai1_y = 150
 dealcards = ds_list_create()
-p1_x = 275
+p1_x = 235
 p1_y = 580
 wait_for_player = false
 faceup_cards = ds_list_create()
@@ -39,6 +39,7 @@ n = i%14;
 ds_list_add(dealcards, n)
 }
 ds_list_shuffle(dealcards)
+
 for(i=0; i< num_cards; i++){
 card_inst = instance_create_layer( 80 , card_y, "Instances", obj_card)
 card_inst.card_type = dealcards[|i];

@@ -1,3 +1,3 @@
-/// @description Insert description here
+/// @description end
 // You can write your code in this editor
-
+room_goto(rm_end)

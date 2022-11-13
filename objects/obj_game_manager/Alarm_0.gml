@@ -33,6 +33,8 @@ if(ai_hand <5 and ai_hand_value <21){
 	
 	alarm[0] = room_speed*0.25	
 }else if(ai_hand ==5){
+	ai_deal_cards = false
+	ai_hit = false
 	elseLoop = false
 	alarm[5] = room_speed*1.5
 }
