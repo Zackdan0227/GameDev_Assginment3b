@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 //draw condition
-if(ai_hand ==5 and player_hand ==5){
+if(ai_hand ==5 and p_hand ==5){
+	
 	alarm[6] = room_speed *0.25	
 }
 

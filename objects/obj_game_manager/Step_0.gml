@@ -9,14 +9,15 @@ if(play){
 
 if(wait_for_player and mouse_check_button_pressed(mb_left)){
 	
-	if(obj_hit_button.player_hit){
-			obj_hit_button.player_hit =false
-			wait_for_player =false
-			deal_cards = true
-			alarm[1] = room_speed*0.5
+	if(player_hit){
+			player_hit =false
 			
-	}else if (obj_stand_button.player_stand){
-			obj_stand_button.player_stand =false
+			deal_cards = true
+			alarm[1] = room_speed*0.25
+			
+	}
+	if (player_stand){
+			player_stand =false
 			deal_cards = false
 			wait_for_player = false
 			ai_deal_cards = true
@@ -26,4 +27,8 @@ if(wait_for_player and mouse_check_button_pressed(mb_left)){
 	
 
 }
+}
+
+if(obj_score_ai.myscore <=0 || obj_score_p<=0){
+	
 }

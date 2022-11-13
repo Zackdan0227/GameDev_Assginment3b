@@ -1,16 +1,22 @@
 /// @description clean up after each round
 // You can write your code in this editor
 
+for(i=0; i<ds_list_size(ai_cards); i++){
+	
+ds_list_add(burn_cards, ai_cards[|i])	
+}
+for(i=0; i<ds_list_size(player_cards); i++){
+	
+ds_list_add(burn_cards, player_cards[|i])	
+}
 
-ai_hand = 0
-p_hand =0
-ai_hand_value=0
-player_hand_value=0
-p1_x = 275
-p1_y = 580
-ai1_x = 275
-ai1_y = 150
-
-
+for(i = 0; i<ds_list_size(cards);i++){
+	ds_list_add(burn_cards, cards[|i])	
+}
+totalCards = p_hand + ai_hand +ds_list_size(cards)
+ds_list_shuffle(dealcards)
+card_y = 420
+ds_list_clear(cards)
 ds_list_clear(player_cards)
 ds_list_clear(ai_cards)
+alarm[7] = 1
