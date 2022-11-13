@@ -34,10 +34,11 @@ dep = 0
 burn_cards = ds_list_create()
 
 for(i=0; i< num_cards; i++){
-n = i%14;
+n = i%13;
 
 ds_list_add(dealcards, n)
 }
+
 ds_list_shuffle(dealcards)
 
 for(i=0; i< num_cards; i++){
@@ -125,3 +126,4 @@ burncard_y = 440
 ai_hit = false
 aidealsound = true
 restart_i = 0
+audio_play_sound(sound_BGM,1,true)

@@ -34,7 +34,8 @@ if(wait_for_player ){
 }
 
 if(obj_score_ai.myscore <=0){
-room_goto(rm_won)
+alarm[10] = room_speed*1
 }else if (obj_score_p.myscore<=0){
-room_goto(rm_end)	
+alarm[2] = room_speed * 1
 }
+
