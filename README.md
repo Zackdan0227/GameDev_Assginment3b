@@ -1,4 +1,4 @@
-# GameDev_Assginment3b
+# Hit 21
 # Credits
 [poker cards sprites](https://opengameart.org/content/2d-poker-pack)
 
