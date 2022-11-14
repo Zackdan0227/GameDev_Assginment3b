@@ -33,9 +33,5 @@ if(wait_for_player ){
 }
 }
 
-if(obj_score_ai.myscore <=0){
-alarm[10] = room_speed*0.25
-}else if (obj_score_p.myscore<=0){
-alarm[2] = room_speed * 0.25
-}
+
 

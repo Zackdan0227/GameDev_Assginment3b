@@ -20,4 +20,4 @@ card_y = 420
 ds_list_clear(cards)
 ds_list_clear(player_cards)
 ds_list_clear(ai_cards)
-alarm[7] = 1
+alarm[11] = room_speed*0.1
