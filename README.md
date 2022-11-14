@@ -1,4 +1,6 @@
 # Hit 21
+# itchi.io
+[game page](https://zhashul.itch.io/hit-21)
 # Credits
 [poker cards sprites](https://opengameart.org/content/2d-poker-pack)
 
